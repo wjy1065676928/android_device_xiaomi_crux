@@ -50,6 +50,7 @@
 	## 添加橙狐特殊处理
     #wjy1214
     export OF_PATCH_AVB20=1 
+	export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
 
 	# 跳过FBE解密流程（防止卡在橙狐LOGO或Redmi/Mi LOGO界面）
 	# export OF_SKIP_FBE_DECRYPTION=1
@@ -65,11 +66,5 @@
 	export OF_USE_GREEN_LED=0
 
     export OF_ENABLE_FRP_ADDON=1
-
-	F=$(find "device" -maxdepth 2 -name "mondrian")
-	# 修改启动画面背景色为#000000
-	\cp -fp bootable/recovery/gui/theme/portrait_hdpi/splash.xml "$F"/recovery/root/twres/splash.xml
-	sed -i 's/value="#D34E38"/value="#000000"/g' "$F"/recovery/root/twres/splash.xml
-	sed -i 's/value="#FF8038"/value="#000000"/g' "$F"/recovery/root/twres/splash.xml
 
 	echo -e "\x1b[96mmondrian: 当你看到这个消息的时候，所有的OrangeFox Var已经添加完毕！\x1b[m"
