@@ -51,8 +51,9 @@
     #wjy1214
     export OF_PATCH_AVB20=1 
 	export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
-	export FOX_SETTINGS_ROOT_DIRECTORY=/persist/Fox
+	export FOX_SETTINGS_ROOT_DIRECTORY=/persist
 	export FOX_MISCELLANEOUS_ROOT_DIRECTORY=/persist
+	export FOX_USE_SYSTEM_ROOT_AS_SYSTEM=1
 
 	# 跳过FBE解密流程（防止卡在橙狐LOGO或Redmi/Mi LOGO界面）
 	# export OF_SKIP_FBE_DECRYPTION=1
