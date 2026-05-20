@@ -39,9 +39,5 @@ service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service
 
 on boot
     start health-hal-2-1
-    # 创建 symlink 使 TWRP 能找到震动节点
-    mount -t sysfs sysfs /sys
-    mkdir /sys/class/leds/vibrator 0775
-    symlink /sys/devices/platform/soc/89c000.i2c/i2c-1/1-005a/activate /sys/class/leds/vibrator/activate
-    symlink /sys/devices/platform/soc/89c000.i2c/i2c-1/1-005a/duration /sys/class/leds/vibrator/duration
+    write /sys/devices/platform/soc/89c000.i2c/i2c-1/1-005a/activate_mode 1
     setprop sys.usb.config adb
