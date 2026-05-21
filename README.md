@@ -1,9 +1,8 @@
-# Android device tree for Xiaomi Mi9 Pro 5G (crux)
+# TWRP device tree for Xiaomi Mi 9 (cepheus)
 
 ```
 #
-# Copyright (C) 2026 The Android Open Source Project
-# Copyright (C) 2026 SebaUbuntu's TWRP device tree generator
+# Copyright (C) 2025 Team Win Recovery Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
