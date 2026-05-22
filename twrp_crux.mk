@@ -18,5 +18,5 @@ $(call inherit-product, device/xiaomi/crux/device.mk)
 PRODUCT_DEVICE := crux
 PRODUCT_NAME := twrp_crux
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Mi9 Pro 5G
+PRODUCT_MODEL := Mi 9 Pro
 PRODUCT_MANUFACTURER := Xiaomi

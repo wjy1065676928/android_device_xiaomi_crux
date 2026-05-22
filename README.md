@@ -1,4 +1,4 @@
-# TWRP device tree for Xiaomi Mi 9 (cepheus)
+# TWRP device tree for Xiaomi Mi 9 Pro (crux)
 
 ```
 #
